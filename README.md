@@ -21,12 +21,3 @@ _Note_: Currently you can only build for devices as we haven't built complete su
 If you open a terminal window and move to the android sample project home directory (/Androidpp/Samples/AndroidSample) you can compile all the source code for both the framework and sample project by executing the build_native.sh script (./build_native.sh).  Once that code is compiled you should be able to open the Android project (in IntelliJ) and run it on a device or the simulator.
 
 When creating your own project I would suggest setting it up in the same way we have it here as the code in the iOS sample project is shared with the Android project.  The only thing that is really duplicated is resource files (everything in the res directory)
-
-#Contributing
-If you are interested in contributing to the project please contact me (saul.howard@moneydesktop.com) or just check the issue list.  The issue list is organized in the following way:
-
-###Milestones
-Milestones represent a feature or group of work to support a particular class. Within each milestone I have tagged each issue with a **level** tag.
-
-###Levels
-Levels are indicative of dependency among issues.  Therefore issues must be completed in order (i.e. all **Level 1**s must be completed before moving on to **Level 2** issues).
