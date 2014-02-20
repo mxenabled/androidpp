@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="alertColor">#D9531E</color>
+    <color name="black">#000000</color>
+    <color name="black_modal">#BF000000</color>
+
+    <color name="budgetColorGreenBackground">#2EBE51</color>
+    <color name="budgetColorGreenRingColor">#3ED269</color>
+    <color name="budgetColorYellowBackground">#FBB600</color>
+    <color name="budgetColorYellowRingColor">#F5D54A</color>
+    <color name="budgetColorRedBackground">#E22727</color>
+    <color name="budgetColorRedRingColor">#EF4135</color>
+
+    <color name="debts">#CC3925</color>
+    <color name="gray_border">#E8E9E9</color>
+
+    <color name="gray0">#F2F2F2</color>
+    <color name="gray01">#F4F4F4</color>
+    <color name="gray1">#E9EAEB</color>
+    <color name="gray11">#D9D9D9</color>
+    <color name="gray2">#C9CACC</color>
+    <color name="gray3">#B0B0B3</color>
+    <color name="gray4">#919195</color>
+    <color name="gray5">#737373</color>
+    <color name="gray7">#606060</color>
+    <color name="gray8">#494949</color>
+    <color name="gray9">#333333</color>
+
+    <color name="goal_completed">#94DCA5</color>
+    <color name="guideme_issue">#F7941E</color>
+    <color name="light_gray1">#A1A1A5</color>
+    <color name="primaryColor">#00ACED</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent50percent">#BF000000</color>
+    <color name="shader_black">#46000000</color>
+
+    <color name="random1">#91b266</color>
+    <color name="random2">#eee58a</color>
+    <color name="random3">#dd5526</color>
+    <color name="random4">#e49524</color>
+    <color name="random5">#fec62d</color>
+    <color name="random6">#213e52</color>
+    <color name="random7">#bf8f47</color>
+    <color name="random8">#4c1b1b</color>
+    <color name="random9">#b92025</color>
+    <color name="random10">#d7cb70</color>
+    <color name="random11">#ffd64f</color>
+    <color name="random12">#f7941e</color>
+    <color name="random13">#dc6e27</color>
+    <color name="random14">#f0e5c1</color>
+    <color name="random15">#8baca3</color>
+    <color name="random16">#3b6771</color>
+
+    <color name="cat_color1">#8d9b85</color>
+    <color name="cat_color2">#8B702B</color>
+    <color name="cat_color3">#239CC1</color>
+    <color name="cat_color4">#64A744</color>
+    <color name="cat_color5">#D03238</color>
+    <color name="cat_color6">#058E64</color>
+    <color name="cat_color7">#C65B3E</color>
+
+    <color name="secondaryColor">#47C3D3</color>
+    <color name="secondaryHeaderColor">#BF1B2B</color>
+    <color name="shadow_gray">#B2B2B2</color>
+    <color name="splitsColor">#F16430</color>
+    <color name="white">#FFF</color>
+    <color name="white_transparent">#7FFFFFFF</color>
+    <color name="white_transparent_light">#CFFFFFFF</color>
+    <color name="white_transparent_lighter">#D7FFFFFF</color>
+    <color name="account_group_stroke">#717073</color>
+
+    <color name="guideme1">#3498A9</color>
+    <color name="guideme2">#7262A8</color>
+    <color name="guideme3">#E27431</color>
+    <color name="guideme4">#DD4778</color>
+    <color name="guideme5">#2AA999</color>
+    <color name="guideme7">#434A9B</color>
+    <color name="guideme8">#359163</color>
+    <color name="guideme9">#984898</color>
+    <color name="guideme10">#223E51</color>
+
+    <array name="guideme_colors">
+        <item>@color/guideme1</item>
+        <item>@color/guideme2</item>
+        <item>@color/guideme3</item>
+        <item>@color/guideme4</item>
+        <item>@color/guideme5</item>
+        <item>@color/guideme7</item>
+        <item>@color/guideme8</item>
+        <item>@color/guideme9</item>
+        <item>@color/guideme10</item>
+    </array>
+</resources>

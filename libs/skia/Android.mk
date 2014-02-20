@@ -1,0 +1,247 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := skia_static
+
+LOCAL_MODULE_FILENAME := libskia
+
+LOCAL_SRC_FILES:= \
+	src/core/Sk64.cpp \
+	src/core/SkAAClip.cpp \
+	src/core/SkAdvancedTypefaceMetrics.cpp \
+	src/core/SkAlphaRuns.cpp \
+	src/core/SkBitmap_scroll.cpp \
+	src/core/SkBitmap.cpp \
+	src/core/SkBitmapProcShader.cpp \
+	src/core/SkBitmapProcState_matrixProcs.cpp \
+	src/core/SkBitmapProcState.cpp \
+	src/core/SkBitmapSampler.cpp \
+	src/core/SkBlitMask_D32.cpp \
+	src/core/SkBlitRow_D16.cpp \
+	src/core/SkBlitRow_D32.cpp \
+	src/core/SkBlitRow_D4444.cpp \
+	src/core/SkBlitter_4444.cpp \
+	src/core/SkBlitter_A1.cpp \
+	src/core/SkBlitter_A8.cpp \
+	src/core/SkBlitter_ARGB32.cpp \
+	src/core/SkBlitter_RGB16.cpp \
+	src/core/SkBlitter_Sprite.cpp \
+	src/core/SkBlitter.cpp \
+	src/core/SkBuffer.cpp \
+	src/core/SkCanvas.cpp \
+	src/core/SkChunkAlloc.cpp \
+	src/core/SkClampRange.cpp \
+	src/core/SkClipStack.cpp \
+	src/core/SkColor.cpp \
+	src/core/SkColorFilter.cpp \
+	src/core/SkColorTable.cpp \
+	src/core/SkComposeShader.cpp \
+	src/core/SkConcaveToTriangles.cpp \
+	src/core/SkConfig8888.cpp \
+	src/core/SkCordic.cpp \
+	src/core/SkCubicClipper.cpp \
+	src/core/SkData.cpp \
+	src/core/SkDebug.cpp \
+	src/core/SkDeque.cpp \
+	src/core/SkDevice.cpp \
+	src/core/SkDeviceProfile.cpp \
+	src/core/SkDither.cpp \
+	src/core/SkDraw.cpp \
+	src/core/SkEdge.cpp \
+	src/core/SkEdgeBuilder.cpp \
+	src/core/SkEdgeClipper.cpp \
+	src/core/SkFilterProc.cpp \
+	src/core/SkFlate.cpp \
+	src/core/SkFlattenable.cpp \
+	src/core/SkFloat.cpp \
+	src/core/SkFloatBits.cpp \
+	src/core/SkFontDescriptor.cpp \
+	src/core/SkFontHost.cpp \
+	src/core/SkGeometry.cpp \
+	src/core/SkGlyphCache.cpp \
+	src/core/SkGraphics.cpp \
+	src/core/SkLineClipper.cpp \
+	src/core/SkMallocPixelRef.cpp \
+	src/core/SkMask.cpp \
+	src/core/SkMaskFilter.cpp \
+	src/core/SkMaskGamma.cpp \
+	src/core/SkMath.cpp \
+	src/core/SkMatrix.cpp \
+	src/core/SkMemory_stdlib.cpp \
+	src/core/SkMetaData.cpp \
+	src/core/SkMMapStream.cpp \
+	src/core/SkPackBits.cpp \
+	src/core/SkPaint.cpp \
+	src/core/SkPath.cpp \
+	src/core/SkPathEffect.cpp \
+	src/core/SkPathHeap.cpp \
+	src/core/SkPathMeasure.cpp \
+	src/core/SkPicture.cpp \
+	src/core/SkPictureFlat.cpp \
+	src/core/SkPicturePlayback.cpp \
+	src/core/SkPictureRecord.cpp \
+	src/core/SkPixelRef.cpp \
+	src/core/SkPoint.cpp \
+	src/core/SkProcSpriteBlitter.cpp \
+	src/core/SkPtrRecorder.cpp \
+	src/core/SkQuadClipper.cpp \
+	src/core/SkRasterClip.cpp \
+	src/core/SkRasterizer.cpp \
+	src/core/SkRect.cpp \
+	src/core/SkRefDict.cpp \
+	src/core/SkRegion_path.cpp \
+	src/core/SkRegion_rects.cpp \
+	src/core/SkRegion.cpp \
+	src/core/SkScalar.cpp \
+	src/core/SkScalerContext.cpp \
+	src/core/SkScan_Antihair.cpp \
+	src/core/SkScan_AntiPath.cpp \
+	src/core/SkScan_Hairline.cpp \
+	src/core/SkScan_Path.cpp \
+	src/core/SkScan.cpp \
+	src/core/SkShader.cpp \
+	src/core/SkShape.cpp \
+	src/core/SkSpriteBlitter_ARGB32.cpp \
+	src/core/SkSpriteBlitter_RGB16.cpp \
+	src/core/SkStream.cpp \
+	src/core/SkString.cpp \
+	src/core/SkStroke.cpp \
+	src/core/SkStrokerPriv.cpp \
+	src/core/SkTSearch.cpp \
+	src/core/SkTypeface.cpp \
+	src/core/SkTypefaceCache.cpp \
+	src/core/SkUnPreMultiply.cpp \
+	src/core/SkUtils.cpp \
+	src/core/SkWriter32.cpp \
+	src/core/SkXfermode.cpp \
+	src/effects/Sk1DPathEffect.cpp \
+	src/effects/Sk2DPathEffect.cpp \
+	src/effects/SkArithmeticMode.cpp \
+	src/effects/SkAvoidXfermode.cpp \
+	src/effects/SkBitmapCache.cpp \
+	src/effects/SkBlurDrawLooper.cpp \
+	src/effects/SkBlurImageFilter.cpp \
+	src/effects/SkBlurMask.cpp \
+	src/effects/SkBlurMaskFilter.cpp \
+	src/effects/SkColorFilters.cpp \
+	src/effects/SkColorMatrixFilter.cpp \
+	src/effects/SkCornerPathEffect.cpp \
+	src/effects/SkDashPathEffect.cpp \
+	src/effects/SkDiscretePathEffect.cpp \
+	src/effects/SkEffects_none.cpp \
+	src/effects/SkEffects.cpp \
+	src/effects/SkEmbossMask.cpp \
+	src/effects/SkEmbossMaskFilter.cpp \
+	src/effects/SkGradientShader.cpp \
+	src/effects/SkGroupShape.cpp \
+	src/effects/SkKernel33MaskFilter.cpp \
+	src/effects/SkLayerDrawLooper.cpp \
+	src/effects/SkLayerRasterizer.cpp \
+	src/effects/SkMorphologyImageFilter.cpp \
+	src/effects/SkPaintFlagsDrawFilter.cpp \
+	src/effects/SkPixelXorXfermode.cpp \
+	src/effects/SkPorterDuff.cpp \
+	src/effects/SkRectShape.cpp \
+	src/effects/SkTableColorFilter.cpp \
+	src/effects/SkTableMaskFilter.cpp \
+	src/effects/SkTestImageFilters.cpp \
+	src/effects/SkTransparentShader.cpp \
+	src/images/bmpdecoderhelper.cpp \
+	src/images/SkBitmapRegionDecoder.cpp \
+	src/images/SkCreateRLEPixelRef.cpp \
+	src/images/SkFDStream.cpp \
+	src/images/SkFlipPixelRef.cpp \
+	src/images/SkImageDecoder_Factory.cpp \
+	src/images/SkImageDecoder_libpng.cpp \
+	src/images/SkImageDecoder.cpp \
+	src/images/SkImageEncoder_Factory.cpp \
+	src/images/SkImageEncoder.cpp \
+	src/images/SkImageRef_GlobalPool.cpp \
+	src/images/SkImageRef.cpp \
+	src/images/SkImageRefPool.cpp \
+	src/images/SkMovie.cpp \
+	src/images/SkPageFlipper.cpp \
+	src/images/SkScaledBitmapSampler.cpp \
+	src/opts/SkBitmapProcState_opts_none.cpp \
+	src/opts/SkBlitRow_opts_none.cpp \
+	src/opts/SkUtils_opts_none.cpp \
+	src/ports/FontHostConfiguration_android.cpp \
+	src/ports/SkDebug_stdio.cpp \
+	src/ports/SkFontHost_FreeType.cpp \
+	src/ports/SkFontHost_sandbox_none.cpp	\
+	src/ports/SkFontHost_android.cpp \
+	src/ports/SkFontHost_gamma.cpp \
+	src/ports/SkFontHost_tables.cpp \
+	src/ports/SkGlobalInitialization_default.cpp \
+	src/ports/SkImageRef_ashmem.cpp \
+	src/ports/SkMemory_brew.cpp \
+	src/ports/SkMemory_malloc.cpp \
+	src/ports/SkOSFile_brew.cpp \
+	src/ports/SkOSFile_stdio.cpp \
+	src/ports/SkThread_pthread.cpp \
+	src/ports/SkTime_Unix.cpp \
+	src/utils/SkBase64.cpp \
+	src/utils/SkBoundaryPatch.cpp \
+	src/utils/SkCamera.cpp \
+	src/utils/SkColorMatrix.cpp \
+	src/utils/SkCubicInterval.cpp \
+	src/utils/SkCullPoints.cpp \
+	src/utils/SkDeferredCanvas.cpp \
+	src/utils/SkDumpCanvas.cpp \
+	src/utils/SkInterpolator.cpp \
+	src/utils/SkJSON.cpp \
+	src/utils/SkLayer.cpp \
+	src/utils/SkMatrix44.cpp \
+	src/utils/SkMeshUtils.cpp \
+	src/utils/SkNinePatch.cpp \
+	src/utils/SkNWayCanvas.cpp \
+	src/utils/SkOSFile.cpp \
+	src/utils/SkParse.cpp \
+	src/utils/SkParseColor.cpp \
+	src/utils/SkParsePath.cpp \
+	src/utils/SkProxyCanvas.cpp \
+	src/utils/SkSfntUtils.cpp \
+	src/utils/SkUnitMappers.cpp \
+	
+
+LOCAL_CFLAGS += -DSK_BUILD_FOR_ANDROID=1 -DSK_BUILD_FOR_ANDROID_NDK=1 -DBUILD_FOR_ANDROID -DSK_ENABLE_LIBPNG
+LOCAL_CPPFLAGS += -std=c++11
+
+LOCAL_C_INCLUDES := \
+	$(LOCAL_PATH)/include/core \
+	$(LOCAL_PATH)/include/config \
+	$(LOCAL_PATH)/include/effects \
+	$(LOCAL_PATH)/include/images \
+	$(LOCAL_PATH)/include/ports \
+	$(LOCAL_PATH)/include/utils \
+	$(LOCAL_PATH)/include/xml \
+	$(LOCAL_PATH)/src/core \
+	$(LOCAL_PATH)/src/utils \
+	$(LOCAL_PATH)/../freetype/include \
+	$(LOCAL_PATH)/../expat/lib
+
+LOCAL_EXPORT_C_INCLUDES := \
+	$(LOCAL_PATH)/include/core \
+	$(LOCAL_PATH)/include/effects \
+	$(LOCAL_PATH)/include/images \
+	$(LOCAL_PATH)/include/ports \
+	$(LOCAL_PATH)/include/utils \
+	$(LOCAL_PATH)/src/core \
+
+LOCAL_WHOLE_STATIC_LIBRARIES := cocos_libpng_static
+
+LOCAL_STATIC_LIBRARIES := \
+	cocos2dx_static \
+	libft2 \
+	cutils_static \
+	utils_static \
+	libexpat_static
+	
+include $(BUILD_STATIC_LIBRARY)
+
+$(call import-module,libs/cocos2d-x/cocos2dx)
+$(call import-module,libs/freetype)
+$(call import-module,libs/Andrender/libs/cutils)
+$(call import-module,libs/Andrender/libs/utils)
+$(call import-module,libs/expat)

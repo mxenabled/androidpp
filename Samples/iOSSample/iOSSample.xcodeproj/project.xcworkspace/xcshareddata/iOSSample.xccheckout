@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4D5731B5-1F29-45B5-81FF-7BBEBD693489</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOSSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>594F448B-C7DD-4D24-8724-32BF0F830427</key>
+		<string>ssh://git.moneydesktop.com/dev/Androidpp</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Samples/iOSSample/iOSSample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>594F448B-C7DD-4D24-8724-32BF0F830427</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://git.moneydesktop.com/dev/Androidpp</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>594F448B-C7DD-4D24-8724-32BF0F830427</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>594F448B-C7DD-4D24-8724-32BF0F830427</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Androidpp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

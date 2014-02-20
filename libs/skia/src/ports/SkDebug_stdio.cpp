@@ -1,0 +1,34 @@
+
+/*
+ * Copyright 2006 The Android Open Source Project
+ *
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+
+#include "SkTypes.h"
+
+static const size_t kBufferSize = 2048;
+
+#include <stdarg.h>
+#include <stdio.h>
+
+#ifdef BUILD_FOR_ANDROID
+#include <android/log.h>
+#endif
+
+void SkDebugf(const char format[], ...) {
+    char    buffer[kBufferSize + 1];
+    va_list args;
+    va_start(args, format);
+    vsnprintf(buffer, kBufferSize, format, args);
+    va_end(args);
+    
+#ifdef BUILD_FOR_ANDROID
+    __android_log_print(ANDROID_LOG_INFO, "cocos2d-x", "%s", buffer);
+#else
+    fprintf(stderr, "%s", buffer);
+#endif
+}
+

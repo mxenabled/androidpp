@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_repeat"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#FF00FF" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#FFFF00" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"
+        android:background="#00FFFF"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/checkbox_selector" />
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:singleLine="false"
+            android:maxLines="4"
+            android:lines="4"
+            android:gravity="center"
+            android:text="a longer test that is good"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="#7D000000" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="#0000FF" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circle_dial">
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/issue_background" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:background="#0000FF" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="#0000FF" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="#7D0000FF" />
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="25dp"
+            android:background="#FF0000" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@id/view11"
+            android:layout_alignBottom="@id/view11"
+            android:background="#FF00FF" />
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@id/view11"
+            android:layout_alignBottom="@id/view11"
+            android:background="#FF00FF" />
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_above="@id/view11"
+            android:layout_alignRight="@id/view11"
+            android:background="#00FF00" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/view11"
+            android:layout_alignRight="@id/view11"
+            android:background="@drawable/box" />
+
+    </RelativeLayout>
+
+</LinearLayout>
